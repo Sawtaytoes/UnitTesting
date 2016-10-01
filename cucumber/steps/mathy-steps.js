@@ -36,7 +36,7 @@ module.exports = function() {
 		next().pending();
 	});
 
-	this.When("subtracted from $num", function (num, next) {
+	this.When("subtracted by $num", function (num, next) {
 		num = Number(num);
 		mathy.sub(num);
 

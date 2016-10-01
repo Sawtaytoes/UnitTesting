@@ -25,19 +25,19 @@ Feature: Unit Test Simple Math
 
 	Scenario: Subtract
 		Given a number 1
-		When subtracted from 1
+		When subtracted by 1
 		Then it will be 0
 
 	Scenario: Subtract Negative
 		Given a number 1
-		When subtracted from 2
+		When subtracted by 2
 		Then it will be -1
 
 	Scenario: Complex
 		Given a number 1
 		When set to 2
 			And added to 2
-			And subtracted from 1
+			And subtracted by 1
 		Then it will be 3
 
 	Scenario: Large Number
@@ -52,12 +52,12 @@ Feature: Unit Test Simple Math
 
 	Scenario: Large Number Subtraction
 		Given a number 999999999999999999999999
-		When subtracted from 99999999999999999999
+		When subtracted by 99999999999999999999
 		Then it will be 999900000000000000000000
 
 	Scenario: Large Number Subtraction to Zero
 		Given a number 999999999999999999999999
-		When subtracted from 999999999999999999999999
+		When subtracted by 999999999999999999999999
 		Then it will be 0
 
 	Scenario: Large Number Shorthand
