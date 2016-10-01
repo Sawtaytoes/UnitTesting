@@ -7,7 +7,7 @@ var assert = require('assert'),
 module.exports = function() {
 	var mathy;
 
-	this.Given(/^a number (\d+)$/, (num, next) => {
+	this.Given("a number $num", (num, next) => {
 		num = Number(num);
 		mathy = new Mathy({ value: num });
 
@@ -22,28 +22,28 @@ module.exports = function() {
 		next().pending();
 	});
 
-	this.When(/^set to (\d+)$/, function (num, next) {
+	this.When("set to $num", function (num, next) {
 		num = Number(num);
 		mathy.set(num);
 
 		next().pending();
 	});
 
-	this.When(/^added to (\d+)$/, function (num, next) {
+	this.When("added to $num", function (num, next) {
 		num = Number(num);
 		mathy.add(num);
 
 		next().pending();
 	});
 
-	this.When(/^subtracted from (\d+)$/, function (num, next) {
+	this.When("subtracted from $num", function (num, next) {
 		num = Number(num);
 		mathy.sub(num);
 
 		next().pending();
 	});
 
-	this.Then(/^it will be ([-\d]+)$/, (num, next) => {
+	this.Then("it will be $num", (num, next) => {
 		num = Number(num);
 		assert.equal(mathy.get(), num);
 
