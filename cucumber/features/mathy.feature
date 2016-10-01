@@ -1,7 +1,7 @@
 Feature: Unit Test Features
 	As a programmer
-	So I can write bug-free code
-	And really slick APIs
+	I want to create a class to do simple math
+	To test this unit testing framework
 
 	Scenario: Redefine
 		Given a number 1
