@@ -49,6 +49,8 @@ Feature: Input Field Validtion
 			| currency     | 123       | deny    | allow     |
 			| currency     | -1        | deny    | allow     |
 			| currency     | "123"     | deny    | allow     |
+			| currency     | -$123     | allow   | allow     |
+			| currency     | $-123     | allow   | allow     |
 			| currency     | $123      | allow   | allow     |
 			| currency     | $12.30    | allow   | allow     |
 			| currency     | test      | deny    | allow     |
