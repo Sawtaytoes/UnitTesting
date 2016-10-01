@@ -1,3 +1,5 @@
-Testing out Unit Testing frameworks.
+Project dedicated to testing out Unit Testing Frameworks
 
-Starting with Cucumber.
+# Cucumber
+- Mathy checks using a basic addition and subtraction module.
+- Field Validation using a module which checks validation against given inputs
