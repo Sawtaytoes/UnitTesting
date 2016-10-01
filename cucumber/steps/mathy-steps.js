@@ -16,7 +16,7 @@ module.exports = function() {
 		);
 
 		assert.equal(typeof mathy.get(), 'number',
-			"Value is a string, not a number."
+			"Value is not a number."
 		);
 
 		next().pending();
