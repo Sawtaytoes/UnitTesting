@@ -43,6 +43,13 @@ module.exports = function() {
 		next().pending();
 	});
 
+	this.When("multiplied with $num", function (num, next) {
+		num = Number(num);
+		mathy.mult(num);
+
+		next().pending();
+	});
+
 	this.Then("it will be $num", (num, next) => {
 		num = Number(num);
 		assert.equal(mathy.get(), num,

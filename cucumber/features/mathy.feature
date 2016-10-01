@@ -33,12 +33,27 @@ Feature: Unit Test Simple Math
 		When subtracted by 2
 		Then it will be -1
 
-	Scenario: Complex
+	Scenario: Complex Add and Subtract
 		Given a number 1
 		When set to 2
 			And added to 2
 			And subtracted by 1
 		Then it will be 3
+
+	Scenario: Multiply
+		Given a number 9
+		When multiplied with 27
+		Then it will be 243
+
+	Scenario: Multiply with Zero
+		Given a number 1
+		When multiplied with 0
+		Then it will be 0
+
+	Scenario: Multiply with One
+		Given a number 1
+		When multiplied with 1
+		Then it will be 1
 
 	Scenario: Large Number
 		Given a number 999999999999999999999999

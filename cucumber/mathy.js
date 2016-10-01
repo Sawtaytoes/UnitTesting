@@ -22,6 +22,10 @@ class Mathy {
 	sub(num = 0) {
 		return this.set(this.value - num);
 	}
+
+	mult(num = 0) {
+		return this.set(this.value * num);
+	}
 }
 
 module.exports = Mathy;
