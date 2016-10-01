@@ -43,8 +43,6 @@ class ValidationChecker {
 				}
 			} else if (!validation.test(value)) {
 				failedValidations.push('custom');
-			} else if (value == "123") {
-				console.log('value', typeof value);
 			}
 		});
 
