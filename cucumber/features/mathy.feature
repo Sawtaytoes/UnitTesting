@@ -1,4 +1,4 @@
-Feature: Unit Test Features
+Feature: Unit Test Simple Math
 	As a programmer
 	I want to create a class to do simple math
 	To test this unit testing framework
