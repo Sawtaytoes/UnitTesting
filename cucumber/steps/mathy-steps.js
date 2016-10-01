@@ -45,7 +45,9 @@ module.exports = function() {
 
 	this.Then("it will be $num", (num, next) => {
 		num = Number(num);
-		assert.equal(mathy.get(), num);
+		assert.equal(mathy.get(), num,
+			`Mathy has ${mathy.get()} when it should be ${num}.`
+		);
 
 		next().pending();
 	});
