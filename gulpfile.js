@@ -25,8 +25,8 @@ class Task {
 	}
 
 	runWatch() {
-		tasks.cucumber.run();
-		gulp.watch(tasks.cucumber.watchFiles, tasks.cucumber.run);
+		this.run();
+		gulp.watch(this.watchFiles, this.run);
 	}
 }
 
@@ -60,4 +60,4 @@ var tasks = {
 gulp.task(tasks.default.task, [tasks.cucumber.watchTask]);
 
 gulp.task(tasks.cucumber.task, tasks.cucumber.run);
-gulp.task(tasks.cucumber.watchTask, tasks.cucumber.runWatch);
+gulp.task(tasks.cucumber.watchTask, tasks.cucumber.runWatch());
