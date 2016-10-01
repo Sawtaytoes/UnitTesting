@@ -51,7 +51,7 @@ var tasks = {
 				.pipe(plumber({ errorHandler: () => {} }))
 				.pipe(cucumber({
 					'steps': this.root + 'steps/*.js',
-					// 'format': 'progress'
+					'format': 'progress'
 				}))
 		}
 	})

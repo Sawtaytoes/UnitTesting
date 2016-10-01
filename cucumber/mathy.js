@@ -1,7 +1,7 @@
 class Mathy {
 	constructor(options = {}) {
 		this.options = Object.assign({
-			value: 2
+			value: 0
 		}, options);
 
 		this.value = this.options.value;
@@ -16,11 +16,11 @@ class Mathy {
 	}
 
 	add(num = 0) {
-		return this.value + num;
+		return this.set(this.value + num);
 	}
 
 	sub(num = 0) {
-		return this.value - num;
+		return this.set(this.value - num);
 	}
 }
 
