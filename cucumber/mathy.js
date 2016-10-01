@@ -24,4 +24,4 @@ class Mathy {
 	}
 }
 
-module.exports = Mathy
+module.exports = Mathy;
