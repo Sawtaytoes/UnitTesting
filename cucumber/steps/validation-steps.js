@@ -23,7 +23,7 @@ module.exports = function() {
 		if (!isNaN(num) && value) {
 			value = num;
 		} else if (digitStringCheck.test(value)) {
-			value = digitStringCheck.exec(value)[1];
+			value = String(digitStringCheck.exec(value)[1]);
 		} else if (value === 'false') {
 			value = false;
 		} else if (value === 'null') {
