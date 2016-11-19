@@ -19,35 +19,35 @@ module.exports = function() {
 			"Value is not a number."
 		);
 
-		next().pending();
+		next();
 	});
 
 	this.When("set to $num", function (num, next) {
 		num = Number(num);
 		mathy.set(num);
 
-		next().pending();
+		next();
 	});
 
 	this.When("added to $num", function (num, next) {
 		num = Number(num);
 		mathy.add(num);
 
-		next().pending();
+		next();
 	});
 
 	this.When("subtracted by $num", function (num, next) {
 		num = Number(num);
 		mathy.sub(num);
 
-		next().pending();
+		next();
 	});
 
 	this.When("multiplied with $num", function (num, next) {
 		num = Number(num);
 		mathy.mult(num);
 
-		next().pending();
+		next();
 	});
 
 	this.Then("it will be $num", (num, next) => {
@@ -56,6 +56,6 @@ module.exports = function() {
 			`Mathy has ${mathy.get()} when it should be ${num}.`
 		);
 
-		next().pending();
+		next();
 	});
 };
